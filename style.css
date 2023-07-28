@@ -50,10 +50,18 @@ body {
 
 
 body {
+    /* URL dell'immagine di sfondo */
+    background-image: url(assets/bacground1.jpg);
+
+    /* Impostazioni per il posizionamento e la ripetizione dell'immagine di sfondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Altezza della pagina per garantire che l'immagine di sfondo copra l'intero viewport */
+    height: 100vh;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    overflow: hidden;
     position: relative;
 }
 
@@ -64,7 +72,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
-    clip-path: polygon(0 0, 100% 60%, 100% 100%, 0 100%);
+    background-color: rgba(255, 255, 255, 0.774);
+    /* Colore di sfondo con opacità */
     z-index: -1;
 }
