@@ -1,0 +1,38 @@
+th,
+td {
+    background-color: rgba(0, 0, 0, 0) !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+
+th {
+    padding-bottom: 30px !important;
+}
+
+td img {
+    margin-bottom: 4px;
+    width: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 5px;
+}
+
+span {
+    font-size: 15px;
+    color: gray;
+}
+
+
+
+ol li {
+    margin-bottom: 10px;
+}
