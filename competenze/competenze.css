@@ -36,3 +36,36 @@ span {
 ol li {
     margin-bottom: 10px;
 }
+
+
+.circular-image {
+
+    width: 200px;
+    height: 200px;
+
+}
+
+.mia_lista>li {
+    padding-bottom: 10px;
+}
+
+.titoli_lista1 {
+    background: linear-gradient(265deg, rgb(238, 7, 103) 0%, rgb(70, 10, 211) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+
+.titoli_lista2 {
+    background: linear-gradient(265deg, rgb(37, 211, 10) 0%, rgb(13, 95, 3) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+
+
+.descrizione {
+    font-size: 18px !important;
+}
