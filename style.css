@@ -49,10 +49,123 @@ body {
 }
 
 
-body {
+/* body {
     background-image: url(assets/bacground3.jpg);
     background-position: center;
     background-repeat: repeat-y;
     margin: 0;
     padding: 0;
+} */
+
+/* html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+} */
+
+
+
+
+
+body {
+
+    /* Colore di sfondo per la pagina o per l’elemento che conterrà l’immagine. */
+    background-color: #0b3c66;
+
+    /* Posizione in cui si trova l’immagine.
+    Sostituire https://imtblog.it/demo/background-image/images/sfondo.jpg con il percorso e nome della tua immagine */
+    background-image: url(assets/bg6000.jpg);
+
+    /* Immagine centrata sia verticalmente che orizzontalmente */
+    background-position: center center;
+
+    /* L’immagine non viene ripetuta, quindi mostrata solo una volta. */
+    background-repeat: no-repeat;
+
+    /* Immagine fissa, non scorrerà con la pagina */
+    background-attachment: fixed;
+
+    /* Dimensione dell'immagine utilizzata come sfondo. L’immagine di sfondo si ridimensionerà in base alle dimensioni dell’intero contenitore */
+    background-size: cover;
+}
+
+/* Per dispositivi mobili: posizione in cui si trova l’immagine.
+    Sostituire https://imtblog.it/demo/background-image/images/sfondo-mobile.jpg con il percorso e nome della tua immagine */
+@media only screen and (max-width: 767px) {
+    body {
+        background-image: url(assets/bg850.jpg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon_mod {
+    font-size: 30px;
+    color: #909294;
+    transition: color 0.4s ease;
+}
+
+.bi-linkedin:hover {
+    color: rgb(0, 110, 255);
+}
+
+.bi-github:hover {
+    color: rgb(255, 255, 255);
+}
+
+.button_mod:hover {
+    background-color: rgb(255, 145, 0);
+    border: solid 1px rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+.margin_mod {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.email_img {
+    width: 300px;
+    margin: 30px;
+}
+
+.linkedin_img {
+    width: 230px;
+    margin: 30px;
+}
+
+.github_img {
+    width: 240px;
+    margin: 30px;
 }
