@@ -1,0 +1,17 @@
+LEGGIMI
+
+Dato un Endpoint fornito dalla scuola, creazione di un e-commerce con la possibilità di gestione totale degli articoli. non presenta alcuna funzionalità di pagamento.
+
+- La home page presenta la lista degli articoli presenti nel database grazie ad una chiamata GET autenticata.
+  gli articoli sono in forma di card dove premendo il tasto descrizione su uno di questi, appare un modal dove grazie ad una chiamata 
+  GET sull'id del prodotto possiamo vedere una descrizione più dettagliata di quest'ultimo
+
+- Il Gestionale presenta un tabella dei prodotti all'interno del database ottenuta grazie a una chiamata GET.
+  per ogni prodotto è possibile tramite i 2 bottoni, modificare o eliminare(chiamata DELETE su id prodotto) 
+  l'articolo desiderato.
+
+- la pagina compilaProdotto è dinamica, tramite una querystring, se nell'url è presente un id, allora questa diventa "modifica Prodotto", 
+  questo avviene se dal gestionale clicchiamo sulla modifica di un prodotto. Tramite una chiamata GET richiama i dati che vengono poi inseriti all'interno del form, una volta apportata la modifica e cliccato  il tasto salva,
+  se il campo url presenta un id allora viene effettuata una chiamata PUT per modificare quei dati.
+  Se invece clicchiamo su aggiungi prodotto dal gestionale, allora la pagina compila prodotto diventerà "aggiungi prodotto" poichè non rileva un id nell'url,
+  compilando il form e premendo salva, se il form è correttamente compilato, verrà eseguita una chiamata POST per creare l'articolo desiderato
