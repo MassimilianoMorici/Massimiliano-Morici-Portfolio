@@ -31,7 +31,7 @@
           <li class="nav-item ms-2">
             <a class="nav-link" href="../competenze/competenze.html">Competenze</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown ms-2">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Progetti
             </a>
@@ -74,14 +74,14 @@
         <div class="card" style="width: 18rem;">
           <img src="assets/you tube download.jpg" class="card-img-top dimMod" alt="...">
           <div class="card-body">
-            <h5 class="card-title">YOU TUBE <br>Video Dowload</h5>
-            <p class="card-text">Replica del vecchio layout di Netflix. 100% responsive utilizzando solo
-              Bootstrap</p>
+            <h5 class="card-title">YOU TUBE <br>Video Download</h5>
+            <p class="card-text">Replica del vecchio layout di Netflix. 100% responsive utilizzando solo Bootstrap</p>
             <div class="d-flex justify-content-between">
               <div class="btn-group m-1">
-                <button type="button" class="btn btn_mod" data-toggle="modal" data-target="#videoModal">Video</button>
+                <button class="btn btn_mod" type="button" data-bs-toggle="modal" data-bs-target="#videoYTDownload">
+                  Video
+                </button>
               </div>
-
               <div class="btn-group m-1">
                 <a href="https://github.com/MassimilianoMorici/Progetto-You-Tube-Downloader-Video" target="_blank"
                   class="btn btn_mod">Vai al codice</a>
@@ -90,6 +90,7 @@
           </div>
         </div>
       </div>
+
 
       <!--CARD 3   RICORDA PASSWORD-->
       <div class="col mb-4 mt-4">
@@ -101,7 +102,9 @@
               esercitarmi...... ehi! ma posso crearlo!"</p>
             <div class="d-flex justify-content-between">
               <div class="btn-group m-1">
-                <a href="assets/vieod yt download.mp4" target="_blank" class="btn btn_mod">Vai al sito</a>
+                <button class="btn btn_mod" type="button" data-bs-toggle="modal" data-bs-target="#videoRicordaPassword">
+                  Video
+                </button>
               </div>
               <div class="btn-group m-1">
                 <a href="https://github.com/MassimilianoMorici/Generatore-Esercizi" target="_blank"
@@ -121,8 +124,9 @@
             <p class="card-text">Esempio funzionamento di un algoritmo per ricerca risultati. leggere READ </p>
             <div class="d-flex justify-content-between">
               <div class="btn-group m-1">
-                <a href="https://massimilianomorici.github.io/Progetto-Ricerca-Lavoro/" target="_blank"
-                  class="btn btn_mod">Vai al sito</a>
+                <button class="btn btn_mod" type="button" data-bs-toggle="modal" data-bs-target="#videoSnake">
+                  Video
+                </button>
               </div>
               <div class="btn-group m-1">
                 <a href="https://github.com/MassimilianoMorici/Progetto-Ricerca-Lavoro" target="_blank"
@@ -132,14 +136,11 @@
           </div>
         </div>
       </div>
-
-
     </div>
-
   </div>
 
 
-
+  <!--FOOTER-->
   <footer id="footer" class="bg-dark text-white text-center mt-5 py-3">
     <div class="container">
       <div class="row">
@@ -173,15 +174,15 @@
 
 
 
-  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+
+
+  <!--MODAL YOUTUBE-->
+  <div class="modal fade" id="videoYTDownload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="videoModalLabel">Il mio video</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Chiudi">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Video Demo YouTube Video Download</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <video width="100%" controls>
@@ -190,7 +191,47 @@
           </video>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL PASSWORD-->
+  <div class="modal fade" id="videoRicordaPassword" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Video Demo Ricorda Password</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <video width="100%" controls>
+            <source src="assets/progetto passw.mp4" type="video/mp4">
+            Il tuo browser non supporta il tag video.
+          </video>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL SNAKE-->
+  <div class="modal fade" id="videoSnake" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Video Demo SNAKE</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <video width="100%" controls>
+            <source src="assets/snake.mp4" type="video/mp4">
+            Il tuo browser non supporta il tag video.
+          </video>
+        </div>
+        <div class="modal-footer">
         </div>
       </div>
     </div>
@@ -202,9 +243,6 @@
 
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
 </body>
