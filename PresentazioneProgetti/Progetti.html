@@ -14,10 +14,10 @@
 <body>
 
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow_custom" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-dark sticky-top shadow_custom" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand me-4" href="../index.html"><img src="assets/logo portfolio.png" class="logo_Massimiliano"
-          alt=""></a>
+      <a class="navbar-brand me-4" href="../index.html"><img src="../assets/logo portfolio.png"
+          class="logo_Massimiliano" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,18 +25,25 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-4">
           <li class="nav-item ms-2">
-            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item ms-2">
             <a class="nav-link" href="../competenze/competenze.html">Competenze</a>
           </li>
-          <li class="nav-item ms-2">
-            <a class="nav-link active" href="Progetti.html">Progetti</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Progetti
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Progetti.html">Front-end</a></li>
+              <li><a class="dropdown-item" href="Backend.html">Back-end</a></li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
 
 
 
